@@ -1,0 +1,72 @@
+<!-- TAG que indica que este arquivo é um Documento HTML (Tipo do doc) -->
+<!DOCTYPE html>
+
+<!-- TAG que indica ao navegador, qual a lingua utilizada na pág -->
+<html lang="pt-BR">
+
+<head>
+    <!-- TAG de metadados que indica o conjunto de caracteres usados no cód -->
+    <!-- UTF-8 é um padrão de codificação de caracteres que representa cada caractere por 1 a 4 bytes. 
+    É a codificação de caracteres mais utilizada na web e é compáivel com o ASCII -->
+    <meta charset="UTF-8">
+
+    <!-- TAG de Metadados que indica que outros dispositivos abrirão a pág -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TAG de Metadados que indica a descrição do conteúdo de pág que aparece nas pesquisas do Google -->
+    <meta name="description" content="Página Home">
+
+    <!-- Aqui a TAG tittle indica o nome que vai na ABA do navegador -->
+    <title> Projeto Integrado </title> 
+
+    <!-- Link para acessar o arquivo de estilização do CSS -->
+     <link rel="stylesheet" href="../styles/style.index.css">
+</head>
+<body>
+    <!-- TAG do cabeçalho -->
+     <header class="header">
+        <!-- TAG navegação de menu -->
+         <nav class="navbar">
+            <div class="logo">
+                <a href="..." class="logo-empresa">
+                    <img class="lg" src="../pictures/AFC-Richmond-Logo.png" alt="Logo" width="200" height="115" id="page-logo">
+                    </a>
+            </div>
+            <!-- Botão sanduíche de menu (três riscos) -->
+             <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+             <!-- Links de navegação -->
+              <!-- Marcador de lista numerada -->
+              <ul class="nav-links" id="nav-list">
+                <li><a href="../pages/estrutura minima.html" target="iframe_paginas">Home</a></li>
+                <li><a href="../pages/listas.html" target="iframe_paginas">Listas</a></li>
+                <li><a href="../pages/tabelas.html" target="iframe_paginas">Tabélas</a></li>
+                <li><a href="...">Formulários</a></li>
+                <li><a href="...">Grids</a></li>
+                <li><a href="../pages/dashboard.html" target="iframe_paginas">Serviços</a></li>
+              </ul>
+         </nav>
+     </header>
+     <!-- TAG que define o conteúdo principal -->
+      <main class="container">
+        <div class="iframe-container"> <!-- área reservada onde vai manter suas devidas posições no corpo do navegador -->
+            <!-- TAG que define a área central de exibição do conteúdo da pág -->
+             <iframe src="..." name="iframe_paginas" id="meuIframe"
+             class="iframe-page" title="Conteúdo Interno" allowfullscreen>
+             </iframe>
+        </div>
+        </main>
+        <!-- TAG que define o rodapé da pág -->
+         <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Meu Site - Todos os direitos reservados.</p>
+                <p>Siga-nos nas redes sociais.
+                </p>
+            </div>
+         </footer>
+         <script src="../js/scrip.index.js"></script>
+</body>
+</html>
