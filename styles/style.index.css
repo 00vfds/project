@@ -1,0 +1,66 @@
+/* Caracteristica geral da página */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(14, 159, 255);
+    padding-inline: 16px;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.nav {
+    max-width: 1200px; /* largura máxima */
+    height: 70px; /* altura */
+    margin-inline: auto; /* margens da linha */
+
+    display: flex; /* O que for ser exibido na tela (flexível) */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+    color: rgba(3, 3, 3, 0.842);
+}
+
+.nav-list {
+    display: flex; /* lista flexível */
+    gap: 32px; /* dá distância do contorno */
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: black;
+    padding-block: 16px; /*distância dos blocos entre os itens */
+}
+
+.hero {
+    height: calc(100vh - 70px); /* Unidade de medida - quase a % horiz e vert */
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px rgb(14, 14, 14);
+    cursor: pointer;
+}
+
+/* Estilos ativos */
+.nav.active .nav-list {
+    opacity: 1; /* link */
+}
+
+.nav.active .hamburguer {
+    position: fixed;
+    top: 26px;  /* topo */
+    right: 16px;
+    border-top-color: transparent;
+}

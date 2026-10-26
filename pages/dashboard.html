@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/style.dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Monitoramento do Sistema</h1>
+        <p> Leitura automática do arquivo JSON gerado em "C"</p>
+    </header>
+    <main class="painel">
+        <section class="card">
+            <h2>Memória RAM</h2>
+            <!-- STRONG serve para que um trecho de texto possui
+             forte importância, serenidade ou urgência. Também deixa
+             o texto em negrito -->
+            <p><strong>Total:</strong> <span id="ramTotal">Carregando...</span> MB</p>
+            <p><strong>Usada:</strong> <span id="ramUsada">Carregando...</span> MB</p>
+            <p><strong>Livre:</strong> <span id="ramLivre">Carregando...</span> MB</p>
+        </section>
+        <section class="card">
+            <h2>Disco Rígido</h2>
+            <p><strong>Total:</strong> <span id="discoTotal">Carregando...</span> GB</p>
+            <p><strong>Usada:</strong> <span id="discoUsado">Carregando...</span> GB</p>
+            <p><strong>Livre:</strong> <span id="discoLivre">Carregando...</span> GB</p>
+        </section>
+        <section class="card">
+            <h2>Processos e Threads</h2>
+            <p><strong>Processos:</strong> <span id="processos">Carregando...</span></p>
+            <p><strong>Threads:</strong> <span id="threads">Carregando...</span></p>
+        </section>
+        <section class="card">
+            <h2>Temperatura</h2>
+            <p><strong>CPU:</strong> <span id="temperatura">Carregando...</span>°C</p>
+        </section>
+        <section class="card">
+            <h2>Última atualização</h2>
+            <p><span id="timestamp">Carregando...</span></p>
+        </section>
+
+    </main>
+    <script src="../js/script.dashboard.js"></script>
+</body>
+</html>
