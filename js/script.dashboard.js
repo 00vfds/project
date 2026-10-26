@@ -6,7 +6,7 @@ async function carregarDados() { /* Cria a função assincrona de
         "aait fetch" - realiza requisições HTP assíncronas, "pausando"
          a execução de uma função async até que o servidor responda */
 
-         const resposta = await fetch("../json/dados.json?ts=" + new Date().getTime());
+         const resposta = await fetch("./json/dados.json?ts=" + new Date().getTime());
          if (!resposta.ok) {
             /* throw new Error -> interrompe a execução do código e lança
             uma execução customizada */
